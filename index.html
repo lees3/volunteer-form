@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Contact form</title>
+  <title>Volunteer Form</title>
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -10,13 +10,48 @@
 </head>
 <body>
 
-<header>
-  <section class="contact pad-t-2 pad-b-2">
-    <div class="max-length">
-      <h1>Send us a sweet little note</h1>
+  <header>
+    <h1>Apply to be a tree planter</h1>
+    <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  </header>
+  <fieldset>
+    <legend>Personal details</legend>
 
-      <form class="push-0" method="POST" action="https://formspree.io/lees0029@algonquinlive.com">
-        <div class="push">
-          <label for="name">Name</label>
-          <input id="name" name="name" required>
-        </div>
+    <div>
+      <form action="thanks.html" method="POST">
+        <label for="name">Full name</label>
+      <input id="name">
+    </div>
+
+    <div>
+      <form action="thanks.html" method="POST">
+        <label for="nickname">What should we call you?</label>
+      <input id="nickname">
+    </div>
+
+    <div>
+      <form action="thanks.html" method="POST">
+        <label for="birthday">Date of birth</label>
+      <input type="date" id="birthday">
+    </div>
+
+    <div>
+      <form action="thanks.html" method="POST">
+        <label for="tshirt">T-shirt size</label>
+      <select id="tshirt">
+      <option>XS</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+      <option>Straight-cut: XS</option>
+      <option>Straight-cut: S</option>
+      <option>Straight-cut: M</option>
+      <option>Straight-cut: L</option>
+      <option>Straight-cut: XL</option>
+    </div>
+
+
+    </form>
+  </body>
+  </html>
