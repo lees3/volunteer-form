@@ -7,20 +7,12 @@ header {
   color: #fff;
 }
 
-form div {
-  margin-bottom: 1.5rem;
+fieldset {
+  border-style: none;
 }
-
 
 label {
   display: block;
-}
-
-input,
-select,
-textarea {
-  width: 20em;
-  font-size: 1.125rem;
 }
 
 textarea {
@@ -36,16 +28,20 @@ select:focus {
 input,
 textarea,
 select {
-  border: 2px solid #6e8c62;
-  padding: 0.3em;
+  border-color: #6e8c62;
+  border-width: 2px;
+  border-style: solid;
+  width: 20em;
 }
 
 button {
-  font-size: 1.125rem;
-  padding: 0.5em 0.7em;
   background-color: #6e8c62;
   color: #fff;
   border-radius: 6px;
-  font-size: 1.125rem;
   cursor: pointer;
+}
+
+footer {
+  background-color: #70ad55;
+  color: #fff;
 }

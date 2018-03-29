@@ -19,12 +19,13 @@
 
   <form action="thanks.html" method="POST">
     <div class="grid">
-      <fieldset>
-        <legend>Personal details</legend>
+      <div class="unit xs-1 s-1 m-1 l-1">
 
-        <div class="unit xs-1 s-1 m-1 l-1">
+        <h2>Personal details</h2>
+
+        <div>
           <label for="name">Full name</label>
-          <input id="name">
+          <input id="name" required>
           <p>"Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”."</p>
         </div>
 
@@ -36,13 +37,13 @@
 
         <div class="unit xs-1 s-1 m-1 l-1">
           <label for="birthday">Date of birth</label>
-          <input type="number" id="birthday" placeholder="yy-mm-dd">
+          <input type="date" id="birthday">
         </div>
 
         <div class="unit xs-1 s-1 m-1 l-1">
           <label for="tshirt">T-shirt size</label>
           <select id="tshirt">
-            <option>Select a t-shirt size</option>
+            <option value="">Select a t-shirt size</option>
             <option>XS</option>
             <option>S</option>
             <option>M</option>
@@ -66,10 +67,9 @@
           <input type="tel" id="phone-number">
         </div>
 
-      </fieldset>
+      <hr>
 
-      <fieldset>
-        <legend>Address</legend>
+        <h2>Address</h2>
 
         <div class="unit xs-1 s-1 m-1 l-1">
           <label for="address">Street adress</label>
@@ -105,11 +105,11 @@
           <label for="postal-code">Postal Code</label>
           <input type="text" id="postal-code">
         </div>
-      </fieldset>
 
-      <fieldset>
+      <hr>
+
         <div class="unit xs-1 s-1 m-1 l-1">
-          <p>What activities are you interested in helping with?</p>
+          <h2>What activities are you interested in helping with?</h2>
           <input id="holes" type="checkbox">
           <label for="holes">Digging holes</label>
 
@@ -138,7 +138,7 @@
         </div>
 
         <div class="unit xs-1 s-1 m-1 l-1">
-          <p>Do you have any experience with the following?</p>
+          <h2>Do you have any experience with the following?</h2>
           <input id="shovels" type="checkbox">
           <label for="shovels">Shovels</label>
 
@@ -171,10 +171,12 @@
           <input id="speaking" type="checkbox">
           <label for="speaking">Speaking to groups</label>
         </div>
-      </fieldset>
 
-      <fieldset>
-        <legend>Do you have a valid driver’s license?</legend>
+      <hr>
+
+        <fieldset>
+          <legend></legend>
+        <h2>Do you have a valid driver’s license?</h2>
 
         <div class="unit xs-1 s-1 m-1 l-1">
           <input id="license-yes" type="radio" name="license">
@@ -184,7 +186,7 @@
           <label for="license-no">No</label>
         </div>
 
-        <p>Do you have a pick-up truck you’d be willing to use?</p>
+        <h2>Do you have a pick-up truck you’d be willing to use?</h2>
 
         <div class="unit xs-1 s-1 m-1 l-1">
           <input id="truck-yes" type="radio" name="truck">
@@ -194,27 +196,28 @@
           <label for="truck-no">No</label>
         </div>
 
-        <p>Do you have up-to-date first-aid certification?</p>
+        <h2>Do you have up-to-date first-aid certification?</h2>
         <div class="unit xs-1 s-1 m-1 l-1">
           <input id="first-aid-yes" type="radio" name="first-aid">
           <label for="first-aid-yes">Yes</label>
         </div>
       </fieldset>
 
-      <fieldset>
-        <legend> Please let us know any comments or questions you may have.</legend>
-
+        <h2> Please let us know any comments or questions you may have.</h2>
         <div class="unit xs-1 s-1 m-1 l-1">
           <label for="questions"></label>
-          <input type="text" id="questions">
+          <textarea id="questions"></textarea>
         </div>
-      </fieldset>
 
       <div class="unit xs-1 s-1 m-1 l-1">
         <button class="btn" type="submit">Apply</button>
       </div>
     </div>
+  </div>
   </form>
+  <footer>
+    © Tree Hugger International Organization
+  </footer>
 
 </body>
 </html>
